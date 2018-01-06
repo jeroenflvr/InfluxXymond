@@ -27,6 +27,7 @@ Apart from some parsing and storing it in a database, that's it.
  - Xymon, of course
  - influxdb
  - perl
+ - grafana
 
 some perl modules
 
@@ -36,15 +37,16 @@ some perl modules
 First get your xymon installed:
  http://xymon.sourceforge.net/
 
-install the perl modules
+Install the perl modules
 
 ```
 sudo cpan install AnyEvent InfluxDB::LineProtocol EV AnyEvent::InfluxDB
 ```
-install influxdb and grafana by following this guide: http://vmkdaily.ghost.io/influxdb-and-grafana-on-centos/
+Install influxdb and grafana by following this [guide](http://vmkdaily.ghost.io/influxdb-and-grafana-on-centos/) for centos/rhel 
+
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Jeroen Van Renterghem** - *Initial work* - 
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
