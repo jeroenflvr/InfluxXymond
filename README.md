@@ -9,15 +9,9 @@ Remember, this is just an example.  I'll be learning Google's Go language while 
 
 ## How does it work?
 Xymon has a xymond_channel http://xymon.sourceforge.net/xymon/help/manpages/man8/xymond_channel.8.html interface that hooks into one of xymond's channels (status, data, ..) and puts this out to a worker module. Doesn't sound very complicated and it really isn't.
-You can write a very simple script that grabs stdin and prints it to stdout:
+You can write a very simple script that grabs stdin and prints it to stdout or just cat:
 
-#!/usr/bin/perl
-while (<>){
- print $_;
-}
-
-call it maybe print_stdin.pl and use it like so:
-  ./xymond_channel --channel=status ./print_stdin.pl
+  ./xymond_channel --channel=status cat
 
 Apart from some parsing and storing it in a database, that's it.
 
